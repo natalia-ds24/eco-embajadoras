@@ -207,7 +207,87 @@ font-family: 'Futura Std', sans-serif;
   font-weight: bold;
 }
 
-ol li {
+.estilo {
     margin-bottom: 10px;
+}
+
+.titulo-central {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight:lighter;
+  font-family: 'Lhetyan Script', sans-serif;
+  background-color: #315134; 
+  color: white; 
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: 50px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas exactas */
+  gap: 10px; /* separación entre imágenes */
+  padding: 20px;
+}
+
+.contenedor-img {
+  background-color: #f4f4f4;
+  padding: 5px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-img img {
+  width: 100%;
+  max-width: 100%; /* ocupa toda la columna */
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.cuidadoma {
+  font-family: 'Lhetyan Script', sans-serif;
+  font-size: 70px;
+  font-weight: lighter;
+}
+
+.cuerpo {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.cuidadoma {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  column-gap: 10px; /* Espacio solo entre columnas */
+  row-gap: 12px; /* ¡Sin espacio entre filas! */
+}
+
+.tarjeta {
+  background-color: #A5904B;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-size: 16px;
+  line-height: 1.2;
+  display: flex;
+  align-items: flex-start;
 }
 

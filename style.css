@@ -146,15 +146,7 @@ color:white;
                                                                                         
 }
 
-     body {
-      background-color: #E2D28C;
-      color: #2D1F1A;
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    h1 {
-      color: #556E3E;
-    }
+   
     .contenedor {
       background-color: #A5904B;
   padding: 10px; /* Reduce el padding si es necesario */
@@ -173,10 +165,6 @@ color:white;
                                    
     }
 
-    .galeria img {
-  width: 100%; 
-  border-radius: 10px;
-}
     .galeria img {
       width: 200px;
       border-radius: 10px;
@@ -233,6 +221,14 @@ font-family: 'Futura Std', sans-serif;
   padding: 20px;
 }
 
+.galeria5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columnas exactas */
+  gap: 10px; /* separación entre imágenes */
+  padding: 20px;
+}
+
+
 .contenedor-img {
   background-color: #f4f4f4;
   padding: 5px;
@@ -267,15 +263,24 @@ font-family: 'Futura Std', sans-serif;
   margin-bottom: 30px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .contenedor-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
+  column-gap: 10px; /* Espacio solo entre columnas */
+  row-gap: 12px; /* ¡Sin espacio entre filas! */
+}
+
+.contenedor-grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  column-gap: 10px; /* Espacio solo entre columnas */
+  row-gap: 12px; /* ¡Sin espacio entre filas! */
+}
+
+.contenedor-grid3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
   column-gap: 10px; /* Espacio solo entre columnas */
   row-gap: 12px; /* ¡Sin espacio entre filas! */
 }
@@ -291,6 +296,31 @@ font-family: 'Futura Std', sans-serif;
   align-items: flex-start;
   color: white;
   text-align: center;
+}
+
+.tarjeta2 {
+  background-color: #A5904B;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-size: 16px;
+  line-height: 1.2;
+  display: flex;
+  align-items:baseline;
+  color: white;
+}
+
+.tarjeta1 {
+  background-color: #A5904B;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-size: 16px;
+  line-height: 1.2;
+  display: flex;
+  align-items: flex-start;
+  color: white;
+text-align: center;
 }
 
 .titulo-central1 {
@@ -314,9 +344,33 @@ font-family: 'Futura Std', sans-serif;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
     }
 
   .blanco {
     color: white;
     text-align: center;
   }
+
+  .contenedor4 {
+  flex: 1; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: justify;
+font-family: 'Codec Pro', sans-serif;
+background-color: #A5904B;
+color:white;
+                                                                                        
+}
+
+.tarjeta5 {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: justify;
+  font-family: 'Codec Pro', sans-serif;
+  background-color: #A5904B;
+  color: white;
+}
